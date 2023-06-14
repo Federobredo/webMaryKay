@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 18.83vh;
+    background-color: #da84b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color: #da84b6;
+    width: 100vw;
+    padding: 2vw;
+    min-height: 30vh;
+
+}
+
+nav div {
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+
+}
+
+nav div a:hover {
+    color: #cccccc;  
+}
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section { 
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   align-content: space-around;
+   height: 100vh;
+
+}
+
+
+main div {
+    width: 48%;
+  
+
+}
+
+div img, video {
+
+width: 100%;
+
+}
+
+header {
+    height: 45.30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+    font-weight: 500;
+    animation-name: animacion;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animacion {
+    
+    0% { transform: scale(0);
+        letter-spacing: 0px; 
+    }
+
+    50% {transform: scale(0.5);
+        letter-spacing: 2px; 
+    }
+
+    100% {transform: scale(1);
+        letter-spacing: 4px; 
+    }
+}
+
+header h1, nav h1 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 4px;
+}
+
+
+
+header h3 {
+    text-transform: uppercase;
+    color: #da84b6;
+    letter-spacing: 3px;
+
+}
+
+header p {
+    font-size: 20px;
+}
+
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 2s;
+}
+
+header a {
+    background-color: #da84b6;
+    padding: 15px;
+}
+
+header a:hover {
+    background-color: #cccccc;
+    color: #da84b6;
+}
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+
+
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+
+
+}
+
+
+.lightboxOverlay { background-color: gray;
+  
+
+}
+
+@media(max-width: 1024px) {
+  
+    nav div {
+        width: 50%;
+    }
+
+    header, section { 
+        margin-bottom: 20px;
+        height: auto;}
+
+        
+}
+
+footer
+{
+    background-color: #da84b6;
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-size: C;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+
+    section div {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+}
